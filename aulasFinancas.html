@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/image_35-removebg-preview.ico">
+    <title>Babbun's Finances</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="aula.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/">Babbun's<span>Finances.</span></a> <!--Left Section-->
+
+        <nav> <!--Middle Section-->
+            <a class="nav-items" href="/cursos">Cursos</a>
+            <a class="nav-items" href="/cursos#spbreEspecifico" id="cursosLink">Sobre</a>
+            <a class="nav-items" href="/cursos#aulaEspecifico" id="cursosLink1">Professores</a>
+            <a class="nav-items" href="/cursos#bcorpEspecifico" id="cursosLink2">B-Corp</a>
+            <a class="nav-items" href="/cursos#contatoEspecifico" id="cursosLink3">Contatos</a>
+        </nav>
+
+        <button class="cta-btn" onclick="confirmLogout()" onclick="window.location.href='/';">Log-out</button>
+    </header><br><br><br>
+
+    <main>
+        <section class="course-intro">
+            <img src="/img/Group 27.png" alt="Fundamentos de Finanças e Economia" class="course-img">
+            <div class="course-info">
+                <h2>Finanças Corporativas e <span class="highlight">Empreendedorismo</span></h2>
+                <p>Descubra como gerir as finanças de um negócio e impulsionar o crescimento sustentável. Este curso
+                    aborda estratégias de capital, análise de fluxo de caixa e planejamento financeiro para
+                    empreendedores, fornecendo as ferramentas necessárias para decisões financeiras sólidas e sucesso no
+                    mercado.</p>
+            </div>
+        </section>
+
+        <section class="lessons">
+            <!-- Aula 1 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 1 - Gestão de Capital de Giro</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/z50quCqt0Xs?si=wWFaIBURncYXgWeB"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Nesta aula, abordaremos a importância da gestão de capital de giro para a saúde financeira das
+                        empresas, discutindo como otimizar os ativos e passivos circulantes para garantir liquidez e
+                        eficiência operacional.<br><br> Professor: Daniel Niggle</p>
+                </div>
+            </div>
+
+            <!-- Aula 2 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 2 - Financiamento de Empresas e Estrutura de Capital:</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/O040WLOBzow?si=iSrVygEprsAMWPGW"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Vamos explorar as diferentes fontes de financiamento disponíveis para empresas, analisando a
+                        estrutura de capital ideal e como ela impacta o custo de capital e a sustentabilidade financeira
+                        a longo prazo.<br><br> Professor: José Kobori</p>
+                </div>
+            </div>
+
+            <!-- Aula 3 com vídeo -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 3 - Avaliação de Projetos e Valuation de Empresas</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/YBCYF1HwM0I?si=VYyxvjF7KygFRuNT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Esta aula se concentrará em técnicas de avaliação de projetos e métodos de valuation de empresas,
+                        como o fluxo de caixa descontado e a análise de múltiplos, ajudando a tomar decisões informadas
+                        sobre investimentos.<br><br> Professor: Bruno Zaramello</p>
+                </div>
+            </div>
+
+            <!-- Aula 4 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 4 - Fusões, Aquisições e Estratégias de Crescimento</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/eHHpBPXeYIE?si=TCycl5pT9O-CqY0_"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Vamos discutir as estratégias de crescimento através de fusões e aquisições, abordando os
+                        processos envolvidos, as razões para essas decisões e os impactos financeiros e operacionais que
+                        elas podem ter nas empresas.<br><br> Professora: Fernanda Moreira
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+
+    <script>// Seleciona todos os botões do acordeão
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+
+                // Alterna a visibilidade do conteúdo
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null; // Fecha o acordeão
+                } else {
+                    // Fecha os outros conteúdos antes de abrir o atual
+                    document.querySelectorAll('.accordion-content').forEach(item => {
+                        item.style.maxHeight = null;
+                    });
+
+                    // Abre o conteúdo atual
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+
+        function confirmLogout() {
+            // Exibe uma caixa de confirmação antes de fazer o log-out
+            if (confirm("Tem certeza de que deseja fazer log-out?")) {
+                // Redireciona para a rota de log-out se o usuário confirmar
+                window.location.href = '/';
+            }
+        }
+    </script>
+</body>
+
+</html>

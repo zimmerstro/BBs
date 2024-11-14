@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image_35-removebg-preview.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>Babbun's Finances</title>
+    <link rel="stylesheet" href="aula.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/">Babbun's<span>Finances.</span></a> <!--Left Section-->
+
+        <nav> <!--Middle Section-->
+            <a class="nav-items" href="/cursos">Cursos</a>
+            <a class="nav-items" href="/cursos#spbreEspecifico" id="cursosLink">Sobre</a>
+            <a class="nav-items" href="/cursos#aulaEspecifico" id="cursosLink1">Professores</a>
+            <a class="nav-items" href="/cursos#bcorpEspecifico" id="cursosLink2">B-Corp</a>
+            <a class="nav-items" href="/cursos#contatoEspecifico" id="cursosLink3">Contatos</a>
+        </nav>
+
+        <button class="cta-btn" onclick="confirmLogout()" onclick="window.location.href='/';">Log-out</button>
+    </header><br><br><br>
+
+    <main>
+        <section class="course-intro">
+            <img src="/img/Group 28.png" alt="Fundamentos de Finanças e Economia" class="course-img">
+            <div class="course-info">
+                <h2>Gestão Financeira e Planejamento <span class="highlight">Pessoal</span></h2>
+                <p>Aprenda a organizar suas finanças, definir metas e criar um plano financeiro eficaz. Este curso cobre
+                    técnicas de orçamento, controle de gastos e estratégias de investimento, capacitando você a alcançar
+                    estabilidade e segurança financeira pessoal.</p>
+            </div>
+        </section>
+
+        <section class="lessons">
+            <!-- Aula 1 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 1 - Planejamento Financeiro e Controle de Orçamento</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/FPqkCSWY9zU?si=e7udoJ-lMjCquz2S"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Nesta aula, discutiremos a importância do planejamento financeiro para alcançar objetivos
+                        pessoais e profissionais, além de técnicas para elaborar e controlar um orçamento eficaz,
+                        garantindo uma gestão financeira saudável.<br><br> Professor: Gustavo Cerbasi</p>
+                </div>
+            </div>
+
+            <!-- Aula 2 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 2 - Gestão de Dívidas e Crédito</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/q2PVh5Th838?si=NL4NzZSCde2xQNdK"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Vamos explorar estratégias para gerenciar dívidas e utilizar o crédito de forma responsável,
+                        abordando a importância de manter um bom histórico de crédito e as consequências de uma má
+                        gestão financeira.<br><br> Professora: Angela Guimaraes</p>
+                </div>
+            </div>
+
+            <!-- Aula 3 com vídeo -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 3 - Planejamento de Aposentadoria e Investimentos de Longo
+                    Prazo</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/tuZFF5rhVI4?si=Zd5YghI9twornWYb"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Esta aula se concentra na importância de um planejamento eficaz para a aposentadoria, incluindo
+                        estratégias de poupança e investimento que garantam segurança financeira a longo prazo,
+                        considerando diferentes opções e suas vantagens.<br><br> Professor: Fabio Souza</p>
+                </div>
+            </div>
+
+            <!-- Aula 4 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 4 - Contabilidade Básica e Análise de Fluxo de Caixa</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/oZNCKXeyQs0?si=xp6ku5Ab_TKRFPti"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Vamos introduzir conceitos fundamentais de contabilidade, focando na análise de fluxo de caixa,
+                        que é essencial para entender a saúde financeira de uma empresa ou indivíduo, permitindo uma
+                        melhor tomada de decisões.<br><br> Professor: Daniel Niggle
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+
+    <script>// Seleciona todos os botões do acordeão
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+
+                // Alterna a visibilidade do conteúdo
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null; // Fecha o acordeão
+                } else {
+                    // Fecha os outros conteúdos antes de abrir o atual
+                    document.querySelectorAll('.accordion-content').forEach(item => {
+                        item.style.maxHeight = null;
+                    });
+
+                    // Abre o conteúdo atual
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+
+        function confirmLogout() {
+            // Exibe uma caixa de confirmação antes de fazer o log-out
+            if (confirm("Tem certeza de que deseja fazer log-out?")) {
+                // Redireciona para a rota de log-out se o usuário confirmar
+                window.location.href = '/';
+            }
+        }
+    </script>
+</body>
+
+</html>

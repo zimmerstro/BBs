@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/image_35-removebg-preview.ico">
+    <title>Babbun's Finances</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/">Babbun's<span>Finances.</span></a> <!--Left Section-->
+
+        <nav> <!--Middle Section-->
+            <a class="nav-items" href="/cursos">Cursos</a>
+            <a class="nav-items" href="/cursos#spbreEspecifico" id="cursosLink">Sobre</a>
+            <a class="nav-items" href="/cursos#aulaEspecifico" id="cursosLink1">Professores</a>
+            <a class="nav-items" href="/cursos#bcorpEspecifico" id="cursosLink2">B-Corp</a>
+            <a class="nav-items" href="/cursos#contatoEspecifico" id="cursosLink3">Contatos</a>
+        </nav>
+
+        <button class="cta-btn" onclick="window.location.href='/login';">Login</button> <!--Right Section-->
+    </header><br><br>
+    <!-- Formulário de Pagamento -->
+    <div class="teste"><!-- Formulário de Pagamento -->
+        <div class="checkout-panel">
+            <div class="panel-body">
+                <form action="/salvarPagamento" method="POST" id="paymentForm">
+                    <h2 class="title">Pagamento</h2>
+                    <div class="payment-method">
+                        <label for="card" class="method card">
+                            <div class="card-logos">
+                                <img src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png" />
+                                <img src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png" />
+                            </div>
+                            <div class="radio-input">
+                                <input id="card" type="radio" name="payment" required>
+                                Pagar R$1599,99 com cartão de crédito
+                            </div>
+                        </label>
+    
+                        <label for="paypal" class="method paypal">
+                            <img src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png" />
+                            <div class="radio-input">
+                                <input id="paypal" type="radio" name="payment" required>
+                                Pagar R$133 em até 12x
+                            </div>
+                        </label>
+                    </div>
+    
+                    <div class="input-fields">
+                        <div class="column-1">
+                            <label for="cardholder" class="title-card">Nome completo</label>
+                            <input type="text" id="cardholder" required />
+    
+                            <div class="small-inputs">
+                                <div>
+                                    <label for="date">Data de validade</label>
+                                    <input type="date" id="date" required />
+                                </div>
+                                <div>
+                                    <label for="verification">CVV / CVC *</label>
+                                    <input type="number" id="verification" required />
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="column-2">
+                            <label for="cardnumber">Número do cartão</label>
+                            <input type="number" id="cardnumber" required />
+                            <span class="info">* CVV ou CVC é o código de segurança do cartão, um número único de três dígitos localizado no verso do seu cartão.</span>
+    
+                            <div class="terms-confirmation">
+                                <label for="terms" class="terms-label">
+                                    <input id="terms" type="checkbox" class="terms-button" disabled>
+                                    Concordo com os <br> <a href="/termo" class="modal-link">termos de uso</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="panel-footer">
+                        <button class="btn back-btn" onclick="window.location.href='/planos'; return false;">Voltar</button>
+                        <button class="btn next-btn" id="submitPayment" type="button">Avançar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Formulário de Registro -->
+        <div class="wrapper">
+            <form action="/registroultra" method="POST">
+                <h1>Registrar novo usuário</h1>
+                <div class="input-box">
+                    
+                    <input type="text" placeholder="Username" name="usuario" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="senha" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Concluir</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.getElementById("submitPayment").addEventListener("click", async function (event) {
+            event.preventDefault();
+
+            const nomeCompleto = document.getElementById("cardholder").value;
+            const numeroCartao = document.getElementById("cardnumber").value;
+            const dataValidade = document.getElementById("date").value;
+            const cvv = document.getElementById("verification").value;
+            const payment = document.querySelector('input[name="payment"]:checked')?.id;
+
+            if (!nomeCompleto || !dataValidade) {
+                alert("Preencha o nome completo e a data de validade.");
+                return;
+            }
+
+            const termsCheckbox = document.getElementById("terms");
+            if (!termsCheckbox.checked) {
+                alert("Por favor, aceite os termos de uso para continuar.");
+                return;
+            }
+
+            if (!payment) {
+                alert("Por favor, selecione um método de pagamento.");
+                return;
+            }
+
+            if (cvv.length !== 3) {
+                alert("O CVV deve ter exatamente 3 dígitos.");
+                return;
+            }
+
+            if (numeroCartao.length !== 16 ) {
+                alert("O número do cartão deve ter 16 dígitos.");
+                return;
+            }
+
+            try {
+                const response = await fetch('/salvarPagamento', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ nomeCompleto, numeroCartao, dataValidade, cvv, payment })
+                });
+
+                if (response.ok) {
+                    alert("Pagamento salvo com sucesso! Agora complete seu registro.");
+                    window.location.href = '/registroultra';
+                } else {
+                    alert("Erro ao salvar o pagamento. Tente novamente.");
+                }
+            } catch (error) {
+                console.error("Erro ao enviar os dados:", error);
+            }
+        });
+
+        $(document).ready(function () {
+            $('.method').on('click', function () {
+                $('.method').removeClass('blue-border');
+                $(this).addClass('blue-border');
+            });
+
+            $('.modal-link').on('click', function (e) {
+                e.preventDefault();
+                $('#terms').prop('disabled', false);
+                window.location.href = $(this).attr('href');
+            });
+        });
+    </script>
+</body>
+
+</html>

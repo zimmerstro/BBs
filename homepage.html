@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/image_35-removebg-preview.ico">
+    <title>Babbun's Finances</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+        <link rel="stylesheet" href="home.css">
+
+    </head>
+
+    <body>
+
+        <section id="hero">
+            <div class="hero-section-container">
+                <header>
+                    <a class="logo" href="/">Babbun's<span>Finances.</span></a> <!--Left Section-->
+            
+                    <nav> <!--Middle Section-->
+                        <a class="nav-items" href="/cursos">Cursos</a>
+                        <a class="nav-items" href="/cursos#spbreEspecifico" id="cursosLink">Sobre</a>
+                        <a class="nav-items" href="/cursos#aulaEspecifico" id="cursosLink1">Professores</a>
+                        <a class="nav-items" href="/cursos#bcorpEspecifico" id="cursosLink2">B-Corp</a>
+                        <a class="nav-items" href="/cursos#contatoEspecifico" id="cursosLink3">Contatos</a>
+                    </nav>
+            
+                    <button class="cta-btn" onclick="window.location.href='/login';">Login</button> <!--Right Section-->
+                </header>
+
+                <div class="hero-content"> <!--Hero Content-->
+
+                    <div class="left-section">
+                        <div class="left-content-container">
+                            <h3>FINANCES</h3>
+                            <h1>
+                                <span>B</span>
+                                <span class="color-change">B</span>
+                                <span>'</span>
+                                <span class="color-change">S</span>
+
+                            </h1>
+                            <p>
+                                <span>Babbun's Finances</span> é uma plataforma que visa
+                                revolucionar a maneira como indivíduos e pequenas empresas gerenciam suas finanças. Com
+                                o crescimento constante do ambiente digital, a necessidade de ferramentas eficazes para
+                                o controle financeiro se tornou essencial. O FINANCES BB'S se destaca ao oferecer uma
+                                interface intuitiva e recursos que atendem tanto a iniciantes quanto a usuários
+                                experientes.
+
+                            </p>
+                            <a href="/cursos"><button class="big-cta-btn">Começar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="stro">
+                        <div class="d3">
+                            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.35/build/spline-viewer.js"></script>
+                            <spline-viewer url="https://prod.spline.design/7cF2bbpvsPM-MpG1/scene.splinecode"></spline-viewer>
+                        </div>
+
+                    </div>
+
+
+                </div>
+        </section>
+        <script>
+            document.getElementById('cursosLink').addEventListener('click', function (event) {
+                event.preventDefault(); // Previne a navegação padrão
+
+                window.location.href = '/cursos#conteudoEspecifico'; // Redireciona para a página e para a parte específica
+            });
+
+            document.getElementById('cursosLink1').addEventListener('click', function (event) {
+                event.preventDefault(); // Previne a navegação padrão
+
+                window.location.href = '/cursos#contatoEspecifico'; // Redireciona para a página e para a parte específica
+            });
+        </script>
+
+    </body>
+
+    </html>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/image_35-removebg-preview.ico">
+    <title>Babbun's Finances</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aula.css">
+
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/">Babbun's<span>Finances.</span></a> <!--Left Section-->
+
+        <nav> <!--Middle Section-->
+            <a class="nav-items" href="/cursos">Cursos</a>
+            <a class="nav-items" href="/cursos#spbreEspecifico" id="cursosLink">Sobre</a>
+            <a class="nav-items" href="/cursos#aulaEspecifico" id="cursosLink1">Professores</a>
+            <a class="nav-items" href="/cursos#bcorpEspecifico" id="cursosLink2">B-Corp</a>
+            <a class="nav-items" href="/cursos#contatoEspecifico" id="cursosLink3">Contatos</a>
+        </nav>
+
+        <button class="cta-btn" onclick="confirmLogout()" onclick="window.location.href='/';">Log-out</button>
+    </header><br><br><br>
+
+    <main>
+        <section class="course-intro"> <img src="/img/Group 29.png" alt="Fundamentos de Finanças e Economia"
+                class="course-img">
+            <div class="course-info">
+                <h2>Fundamentos de Finanças e <span class="highlight">Economia</span></h2>
+                <p>Descubra os conceitos essenciais de finanças e economia com este curso introdutório. Aprenda a
+                    analisar finanças, realizar planejamento econômico e interpretar indicadores importantes para tomar
+                    decisões financeiras inteligentes. Ideal para quem quer compreender o mercado financeiro e aprimorar
+                    sua gestão financeira no dia a dia e no ambiente empresarial.</p>
+            </div>
+        </section>
+
+        <section class="lessons">
+            <!-- Aula 1 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 1 - Introdução à economia (micro e macroeconomia)</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/sExKS5eNUGo?si=JbuhDSM_QdyOIPjd"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Esta aula oferece uma visão geral da economia, abordando microeconomia, que estuda o
+                        comportamento de indivíduos e empresas, e macroeconomia, que analisa a economia como um todo,
+                        incluindo inflação, desemprego e políticas econômicas.<br><br> Professor: Gabriel Almeida</p>
+                </div>
+            </div>
+
+            <!-- Aula 2 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 2 - Conceitos de valor presente e valor futuro</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/f9pPuHbARVM?si=Y2gTpCIInxFf5Lmp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Exploraremos os princípios do valor do dinheiro ao longo do tempo, destacando como calcular o
+                        valor presente e o valor futuro de investimentos e pagamentos, fundamentais para decisões
+                        financeiras e avaliação de projetos.<br><br> Professor: Sandro Davidson</p>
+                </div>
+            </div>
+
+            <!-- Aula 3 com vídeo -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 3 - Inflação, taxas de juros e câmbio</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/Yw0Vc30vkLA?si=HDhoST8NAlfJWcaC"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Esta aula examina a inflação, suas causas e efeitos na economia, além de como as taxas de juros
+                        influenciam o consumo e o investimento, e a dinâmica das taxas de câmbio no comércio
+                        internacional.<br><br> Professor: José Kobori</p>
+                </div>
+            </div>
+
+            <!-- Aula 4 -->
+            <div class="accordion-item">
+                <button class="accordion-button">Aula 4 - Funcionamento do Mercado Financeiro e de Capitais</button>
+                <div class="accordion-content">
+                    <iframe width="320" height="580" src="https://www.youtube.com/embed/llzOggL1xUI?si=MlqbZeL7AbuT8gq3"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Aqui, vamos entender a estrutura e o funcionamento dos mercados financeiros e de capitais,
+                        incluindo os instrumentos financeiros, o papel das instituições financeiras e a importância da
+                        regulação para a estabilidade econômica.<br><br> Professor: Ramiro Gomes
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="scripts.js"></script>
+
+    <script>// Seleciona todos os botões do acordeão
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+
+                // Alterna a visibilidade do conteúdo
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null; // Fecha o acordeão
+                } else {
+                    // Fecha os outros conteúdos antes de abrir o atual
+                    document.querySelectorAll('.accordion-content').forEach(item => {
+                        item.style.maxHeight = null;
+                    });
+
+                    // Abre o conteúdo atual
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+
+        function confirmLogout() {
+            // Exibe uma caixa de confirmação antes de fazer o log-out
+            if (confirm("Tem certeza de que deseja fazer log-out?")) {
+                // Redireciona para a rota de log-out se o usuário confirmar
+                window.location.href = '/';
+            }
+        }
+    </script>
+</body>
+
+</html>

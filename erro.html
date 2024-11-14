@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/image_35-removebg-preview.ico">
+    <title>Babbun's Finances</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Fredoka", sans-serif;
+    }
+
+    .frem {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url('./gifs.gif');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .frem p {
+        position: absolute;
+        top: 3rem;
+        font-size: 7rem;
+        color: #00000063;
+    }
+
+    .frem h2 {
+        position: absolute;
+        bottom: 8rem;
+        font-size: 34px;
+    }
+
+    .frem h5 {
+        position: absolute;
+        bottom: 6rem;
+        color: #9c9c9c;
+    }
+
+    .frem button {
+        position: absolute;
+        bottom: 1rem;
+      
+        padding: 12px;
+        
+        text-decoration: none;
+        font-size: 23px;
+        border-radius: 13px;
+    }
+
+    .btn-login{
+        font-size: 18px;
+		font-weight: bold;
+		padding: 7px 25px;
+		background-color: transparent;
+		border: 1px solid #0E122A;
+		border-radius: 20px;
+		color: #141938;
+		transition: 0.3s;
+		cursor: pointer;
+    }
+    
+
+	.btn-login:hover {
+		background-color: rgb(0, 225, 225);
+		color: rgba(0, 0, 0, 0.6);
+		border-color: rgb(0, 225, 225);
+	}
+
+
+
+
+</style>
+
+<body>
+    <div class="frem">
+        <p>404</p>
+        <h2>Senha ou Usuario incorreto</h2>
+        <h5>verifique sua senha e usuario!</h5>
+        <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fat6khluju6hwcwfeicw9.gif" alt="Carregando..." />
+       <button class="btn-login" onclick="window.location.href='/login';"> Voltar para o Login</button> <!--Right Section-->
+
+    </div>
+</body>
+
+</html>

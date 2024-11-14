@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/image_35-removebg-preview.ico">
+    <title>Babbun's Finances</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="cursos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="/">Babbun's<span>Finances.</span></a> <!--Left Section-->
+
+        <nav> <!--Middle Section-->
+            <a class="nav-items" href="/cursos">Cursos</a>
+            <a class="nav-items" href="/cursos#spbreEspecifico" id="cursosLink">Sobre</a>
+            <a class="nav-items" href="/cursos#aulaEspecifico" id="cursosLink1">Professores</a>
+            <a class="nav-items" href="/cursos#bcorpEspecifico" id="cursosLink2">B-Corp</a>
+            <a class="nav-items" href="/cursos#contatoEspecifico" id="cursosLink3">Contatos</a>
+        </nav>
+
+        <button class="cta-btn" onclick="window.location.href='/login';">Login</button> <!--Right Section-->
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="/img/Group 22 (1).png">
+                <div class="content">
+                    <div class="author">Curso 1</div>
+                    <div class="title">Fundamentos de Finanças e</div>
+                    <div class="topic">Economia</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Essencial para entender os conceitos básicos, como juros, inflação, custo de oportunidade, e
+                        como a economia afeta o mercado financeiro.
+                        Conteúdos típicos:
+                        Introdução à economia (micro e macroeconomia)
+                        Conceitos de valor presente e valor futuro
+                        Inflação, taxas de juros e câmbio
+                        Funcionamento do mercado financeiro e de capitais
+                    </div>
+                    <div class="buttons">
+                        <a href="/planos" class="text-light"><button>Acessar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Group 25 (1).png">
+                <div class="content">
+                    <div class="author">Curso 2</div>
+                    <div class="title">Investimentos e Mercado</div>
+                    <div class="topic">de Ações</div>
+                    <div class="des">
+                        Permite que você aprenda a aplicar e gerir capital, entendendo ações, títulos e outros ativos
+                        financeiros.
+                        Conteúdos típicos:
+                        Ações, títulos públicos e fundos de investimento
+                        Renda fixa vs. renda variável
+                        Avaliação de risco e retorno
+                        Análise técnica e fundamentalista de investimentos
+                    </div>
+                    <div class="buttons">
+                        <a href="/planos" class="text-light"><button>Acessar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Group 23 (1).png">
+                <div class="content">
+                    <div class="author">Curso 3</div>
+                    <div class="title">Gestão Financeira e </div>
+                    <div class="topic">Planejamento Pessoal</div>
+                    <div class="des">
+                        Ensina como administrar as finanças pessoais e empresariais, abordando temas como planejamento,
+                        controle de dívidas e fluxo de caixa.
+                        Conteúdos típicos:
+                        Planejamento financeiro e controle de orçamento
+                        Gestão de dívidas e crédito
+                        Planejamento de aposentadoria e investimentos de longo prazo
+                        Contabilidade básica e análise de fluxo de caixa
+                    </div>
+                    <div class="buttons">
+                        <a href="/planos" class="text-light"><button>Acessar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Group 24 (1).png">
+                <div class="content">
+                    <div class="author">Curso 4</div>
+                    <div class="title">Finanças Corporativas e </div>
+                    <div class="topic">Empreendedorismo</div>
+                    <div class="des">
+                        Indicado para quem quer aprofundar conhecimentos em gestão financeira empresarial e tomada de
+                        decisão estratégica.
+                        Conteúdos típicos:
+                        Gestão de capital de giro
+                        Financiamento de empresas e estrutura de capital
+                        Avaliação de projetos e valuation de empresas
+                        Fusões, aquisições e estratégias de crescimento
+                    </div>
+                    <div class="buttons">
+                        <a href="/planos" class="text-light"><button>Acessar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <div class="item">
+                <img src="/img/Group 22 (1).png">
+                <div class="content">
+                    <div class="title">
+                        Curso 1
+                    </div>
+                    <div class="description">
+                        Fundamentos de Finanças e Economia
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Group 25 (1).png">
+                <div class="content">
+                    <div class="title">
+                        Curso 2
+                    </div>
+                    <div class="description">
+                        Investimentos e Mercado de Ações
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Group 23 (1).png">
+                <div class="content">
+                    <div class="title">
+                        Curso 3
+                    </div>
+                    <div class="description">
+                        Gestão Financeira e Planejamento Pessoal
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Group 24 (1).png">
+                <div class="content">
+                    <div class="title">
+                        Curso 4
+                    </div>
+                    <div class="description">
+                        Finanças Corporativas e Empreendedorismo
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev">
+                < </button>
+                    <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+
+    <!-- Sessão "Who We Are" -->
+    <div id="sobreEspecifico">
+
+        <div class="container">
+            <div class="text-content">
+                <p class="subtitle">O melhor para você</p>
+                <h1 class=>Quem somos nós?</h1>
+                <p>Você já se perguntou como algumas pessoas conseguem organizar suas finanças, investir com sabedoria e
+                    alcançar seus objetivos mais rapidamente? A resposta está no conhecimento financeiro! No nosso curso
+                    de
+                    Economia Financeira, você vai aprender tudo o que precisa para dominar suas finanças pessoais, desde
+                    a
+                    criação de um planejamento inteligente até as melhores estratégias de investimento. Não importa se
+                    você
+                    é iniciante ou já tem algum conhecimento na área, temos conteúdos pensados para todos os níveis.
+                </p>
+            </div>
+            <div class="image-gallery">
+                <img src="/img/homem-fazendo-apresentacao-em-frente-a-companheiro.webp"
+                    alt="Coffee Image 1">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sessão "Our Products" -->
+
+    <div id="aulaEspecifico">
+
+        <div class="section-title">
+            <p>Nossos Principais</p>
+            <h1>Professores</h1>
+        </div>
+
+        <div class="products">
+            <div class="product-card">
+                <img src="img/alegre_Ramiro.webp" alt="Espresso Americano">
+                <div class="product-info">
+                    <h3>Ramiro Gomes</h3>
+                    <p>Consectetur elit, sed do eiusmod tempor sed et dolor init</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/eitonilda.webp" alt="Espresso Americano">
+                <div class="product-info">
+                    <h3>Eitonilda</h3>
+                    <p>Consectetur elit, sed do eiusmod tempor sed et dolor init</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/corpo_inteiro_recortado.png" alt="Cappuccino coffee">
+                <div class="product-info">
+                    <h3>José Kobori</h3>
+                    <p>Consectetur elit, sed do eiusmod tempor sed et dolor init</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/img_bdee11b228ba05fb18b5814779d41854810fe66e.png" alt="Cold brew coffee">
+                <div class="product-info">
+                    <h3>Gustavo Cerbasi</h3>
+                    <p>Consectetur elit, sed do eiusmod tempor sed et dolor init</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sessão "Our Services" -->
+
+    <div id="bcorpEspecifico">
+
+        <div class="services-section">
+            <div class="section-title">
+                <p>Porque somos</p>
+                <h1>Uma empresa B-Corp?</h1>
+            </div>
+            <div class="services-content">
+                <div class="left">
+                    <p>Com a criação da nossa plataforma, não queriamos ser como qualquer outra que existe no mercado,
+                        então
+                        começamos a pensar em algo para nos destacarmos, e nisso decidimos virar uma empresa B-Corp.
+                    </p>
+                    <p>Com o valor que ganharemos com a venda dos cursos, iremos destinar 20% dos valores a instituições
+                        de
+                        caridade, que cuidam de diversas causas, como resgate de animais, cuidados de pessoas em
+                        situações
+                        precarias ou fome, crianças orfãs, e pessoas com deficiências físicas e mentais.</p>
+                </div>
+                <div class="right">
+                    <div class="service-boxes">
+                        <div class="service-box">
+                            <img src="/img/OIP.jpg" alt="Types of Coffee">
+                            <h3>Instituto Caramelo</h3>
+                            <a href="https://institutocaramelo.org/"><button class="button">Acesse o site</button></a>
+                        </div>
+                        <div class="service-box">
+                            <img src="/img/265749b3e5e35289aaca862ca9e4d2ba68d85639.png" alt="Bean Varieties">
+                            <h3>Amigos do Bem</h3>
+                            <a href="https://www.amigosdobem.org/"><button class="button">Acesse o site</button></a>
+                        </div>
+                        <div class="service-box">
+                            <img src="/img/casa-lucas-site-1.png" alt="Coffee & Pastry">
+                            <h3>Casa Lucas</h3>
+                            <a href="https://www.casalucas.org/"><button class="button">Acesse o site</button></a>
+                        </div>
+                        <div class="service-box">
+                            <img src="/img/images.png" alt="Coffee to go">
+                            <h3>Instituto Serendipidade</h3>
+                            <a href="https://www.serendipidade.org.br/"><button class="button">Acesse o
+                                    site</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="section-title">
+                <h1>Nossa equipe</h1>
+            </div>
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="/img/WhatsApp Image 2024-11-09 at 20.26.18 1.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Arthur Oliveira
+                        </h2>
+                        <p class="description">Designer e desenvolvedor Front-end</p>
+                        <a href="https://www.linkedin.com/in/arthur-oliveira-5b3551334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button class="button">Veja mais</button></a>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="/img/Image 1 (1).png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Erick Li
+                        </h2>
+                        <p class="description">Designer e desenvolvedor Back-end</p>
+                        <a href="https://www.linkedin.com/in/erick-li-75044730b/?trk=opento_sprofile_topcard"><button class="button">Veja mais</button></a>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="/img/c276235a-30b7-4b77-81c7-d020affb76a2 1.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Felipe Zimmermann
+                        </h2>
+                        <p class="description">Full stack e Scrum master</p>
+                        <a href="https://www.linkedin.com/in/felipe-zimmermann-2a60a4338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button class="button">Veja mais</button></a>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="/img/dad3de82-877e-4a1f-959b-868afa96672e 2.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Matheus Lopes
+                        </h2>
+                        <p class="description">Desenvolvedor Front-end e Analista</p>
+                        <a href="https://www.linkedin.com/in/lopes-lima-aa6632337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button class="button">Veja mais</button></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+    </div>
+
+
+    <style>
+        .contact-info,
+        .contact-form {
+            padding: 20px;
+        }
+
+        .contact-info {
+            background-color: #0E122A;
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+        }
+
+
+
+        .contact-info .info-block {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .info-text {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .info-text h3 {
+            text-align: center;
+        }
+
+
+
+        .contact-form {
+            background-color: #0E122A;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0E122A;
+            color: #fff;
+            resize: none;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #ccc;
+        }
+
+
+        /* Estilos responsivos para telas menores */
+        @media (max-width: 600px) {
+            .contact-form {
+                flex-direction: column;
+            }
+
+            .contact-form input,
+            .contact-form textarea,
+            .contact-form button {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <div id="contatoEspecifico">
+
+        <section class="contact-container">
+            <h2 class="tororo">Entre em contato</h2>
+            <div class="contact-info">
+
+                <div class="info-block">
+                    <img src="/img/icons8-marcador-35.png" alt="Location Icon">
+                    <div class="info-text">
+                        <h3>Endereço</h3>
+                        <p>Av. Lins de Vasconcelos, 1222 -<br>Aclimação, São Paulo - SP, 01538-001</p>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <img src="/img/icons8-clock.svg" alt="Clock Icon">
+                    <div class="info-text">
+                        <h3>Horário de <br>funcionamento</h3>
+                        <p>Segunda - Sexta : 7am - 10pm<br>Sábado e Domingo : Fechado</p>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <img src="/img/icons8-mensagem-preenchida-35.png" alt="Email Icon">
+                    <div class="info-text">
+                        <h3>Informações de <br>contato</h3>
+                        <p>babbunsfinances@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8423555466425!2d-46.625807688805!3d-23.574104678702575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597abf1a28ff%3A0x1b02a58f85e6395e!2zRklBUCAtIEFjbGltYcOnw6Nv!5e0!3m2!1spt-BR!2sbr!4v1730854275219!5m2!1spt-BR!2sbr"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                <form action="https://formsubmit.co/babbunsfinances@gmail.com" method="POST">
+                    <h1>Formulário de contato</h1>
+                    <div class="stro">
+                        <input type="text" id="firstName" placeholder="Primeiro Nome" name="name" required />
+                        <input type="text" id="lastName" placeholder="Último Nome" name="name2" required />
+                        <input type="email" id="email" placeholder="Email" name="email" required />
+                        <h4>Digite sua mensagem aqui...</h4>
+                        <textarea rows="1" cols="1" maxlength="none" name="message"></textarea>
+                        <button type="submit" class="endbutton">enviar</button>
+                        <input type="text" name="_honey" style="display:none" />
+                        <input type="hidden" name="_captcha" value="false" />
+                    </div>
+                </form>
+            </div>
+
+    </div>
+
+
+
+
+</body>
+<script>
+    document.getElementById('cursosLink').addEventListener('click', function (event) {
+        event.preventDefault(); // Previne a navegação padrão
+
+        window.location.href = '/cursos#sobreEspecifico'; // Redireciona para a página e para a parte específica
+    });
+
+    document.getElementById('cursosLink1').addEventListener('click', function (event) {
+        event.preventDefault(); // Previne a navegação padrão
+
+        window.location.href = '/cursos#aulaEspecifico'; // Redireciona para a página e para a parte específica
+    });
+
+    document.getElementById('cursosLink2').addEventListener('click', function (event) {
+        event.preventDefault(); // Previne a navegação padrão
+
+        window.location.href = '/cursos#bcorpEspecifico'; // Redireciona para a página e para a parte específica
+    });
+
+    document.getElementById('cursosLink3').addEventListener('click', function (event) {
+        event.preventDefault(); // Previne a navegação padrão
+
+        window.location.href = '/cursos#contatoEspecifico'; // Redireciona para a página e para a parte específica
+    })
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+<!--=============== SWIPER JS ===============-->
+<script src="swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="main.js"></script>
+
+
+
+<script>
+
+    var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            520: {
+                slidesPerView: 2,
+            },
+            950: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+
+    //step 1: get DOM
+    let nextDom = document.getElementById('next');
+    let prevDom = document.getElementById('prev');
+
+    let carouselDom = document.querySelector('.carousel');
+    let SliderDom = carouselDom.querySelector('.carousel .list');
+    let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+    let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+    let timeDom = document.querySelector('.carousel .time');
+
+    thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+    let timeRunning = 3000;
+    let timeAutoNext = 7000;
+
+    nextDom.onclick = function () {
+        showSlider('next');
+    }
+
+    prevDom.onclick = function () {
+        showSlider('prev');
+    }
+    let runTimeOut;
+    let runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext)
+    function showSlider(type) {
+        let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+        let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+
+        if (type === 'next') {
+            SliderDom.appendChild(SliderItemsDom[0]);
+            thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+            carouselDom.classList.add('next');
+        } else {
+            SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+            thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+            carouselDom.classList.add('prev');
+        }
+        clearTimeout(runTimeOut);
+        runTimeOut = setTimeout(() => {
+            carouselDom.classList.remove('next');
+            carouselDom.classList.remove('prev');
+        }, timeRunning);
+
+        clearTimeout(runNextAuto);
+        runNextAuto = setTimeout(() => {
+            next.click();
+        }, timeAutoNext)
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+</html>

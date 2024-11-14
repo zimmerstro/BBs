@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/image_35-removebg-preview.ico">
+    <title>Babbun's Finances</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0A1633;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            background-color: #162447;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card-title {
+            color: #3AC4E9;
+            font-weight: bold;
+        }
+
+        label {
+            color: #3AC4E9;
+        }
+
+        .form-control {
+            background-color: #1B1F38;
+            color: #FFFFFF;
+            border: 1px solid #3AC4E9;
+            border-radius: 5px;
+        }
+
+        .form-control:focus {
+            background-color: #1B1F38;
+            border-color: #3AC4E9;
+            box-shadow: none;
+        }
+
+        .btn-primary {
+            background-color: #3AC4E9;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #2A9BB8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5 p-4">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Cadastro de Comentario</h1>
+                        <form action="/cadastro" method="post">
+                            <div class="form-group">
+                                <label for="NomeDoMedicamento">Nome:</label>
+                                <input type="text" class="form-control" id="NomeDoMedicamento" name="NomeDoMedicamento"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="codigo">Comentario:</label>
+                                <input type="text" class="form-control" id="codigo" name="codigo" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Cadastrar Comentario</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
